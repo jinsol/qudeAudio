@@ -783,6 +783,7 @@ footer .logoWrap span img {
 }
 
 .loading {
+  display: none;
   position: fixed;
   inset: 0;
   background-color: #141212;
