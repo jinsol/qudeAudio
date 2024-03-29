@@ -179,7 +179,7 @@ window.onload = function () {
             delay: (t % 3) * 0.05,
           });
       },
-      markers: true,
+      // markers: true,
     });
   });
 
