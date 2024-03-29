@@ -693,6 +693,7 @@ footer .inner .box {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  z-index: 2;
 }
 
 footer .inner .box .mainTextBox {
@@ -807,4 +808,87 @@ footer .logoWrap span img {
 }
 .loading .logo span img {
   width: 100%;
+}
+
+.loading.scene1 {
+  display: block;
+}
+
+.loading.scene1 .logo span {
+  animation-name: up;
+  animation-duration: 1s;
+}
+
+@keyframes up {
+  0% {
+    transform: translateY(30px);
+  }
+  30% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.loading.scene2 .logo span:nth-child(1) {
+  opacity: 0;
+  transition: 0.2s;
+}
+.loading.scene2 .logo span:nth-child(2) {
+  opacity: 0;
+  transition: 0.3s;
+}
+.loading.scene2 .logo span:nth-child(3) {
+  opacity: 0;
+  transition: 0.5s;
+}
+.loading.scene2 .logo span:nth-child(4) {
+  opacity: 0;
+  transition: 0.6s;
+}
+.loading.scene2 .logo span:nth-child(5) {
+  opacity: 0;
+  transition: 0.7s;
+}
+.loading.scene2 .logo span:nth-child(6) {
+  opacity: 0;
+  transition: 0.8s;
+}
+
+/* 페이지로딩 애미네이션 */
+
+.rotate.on {
+  animation-name: rotate;
+  animation-duration: 1.2s;
+}
+
+@keyframes rotate {
+  0% {
+    transform-origin: 0 0;
+    transform: translate(0px, 100%) rotate(20deg);
+    transition: 1s;
+  }
+  100% {
+    transform-origin: 0 0;
+    transform: translate(0px, 0px) rotate(0);
+    transition: 1s;
+  }
+}
+
+.opacity.on {
+  animation: fadeIn;
+  animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
